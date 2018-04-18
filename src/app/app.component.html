@@ -18,3 +18,17 @@
   </li>
 </ul>
 
+<button
+  type="button"
+  ngxFilePicker
+  accept="image/*"
+  multiple
+  (filePick)="file = $event">
+  Browse
+</button>
+
+<div
+  ngxFileDropzone
+  (fileDrop)="file = $event">
+  Drop a file in this zone.
+</div>
